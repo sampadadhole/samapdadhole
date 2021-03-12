@@ -25,7 +25,8 @@ body {
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-  background-color: rgb(206, 201, 201);
+  transition: 0.3s;
+  /* background-color: rgb(206, 201, 201); */
 }
 .Intro {
   /* background-color: lightgrey; */
@@ -39,16 +40,26 @@ body {
   font-family: "Roboto Mono", monospace;
 }
 .Portfolio {
-  background-color: rgb(206, 201, 201);
+  background-color: var(--mainColor);
   border-bottom: 1px solid;
   overflow: auto;
   font-family: "Roboto Mono", monospace;
 }
 .Contact {
-  background-color: #fff;
+  background-color: var(--mainColor);
   border-bottom: 1px solid;
   overflow: auto;
   font-family: "Roboto Mono", monospace;
+}
+.Intro{
+  background-color: var(--mainColor);
+	border-bottom:1px solid var(--borderColor);
+	overflow:auto;
+}
+.About{
+  background-color: var(--secondaryColor);
+	border-bottom:1px solid var(--borderColor);
+	overflow:auto;
 }
 .main-container {
   width: 1200px;
@@ -60,7 +71,7 @@ body {
   min-height: 10em;
   justify-content: center;
   align-content: center;
-  background-color: rgb(206, 201, 201);
+  /* background-color: rgb(206, 201, 201); */
 }
 h1 {
   font-family: "Russo One", sans-serif;
@@ -68,23 +79,30 @@ h1 {
   font-size: 4rem;
   color: var(--mainText);
 }
-h3{
+h3,h4{
   font-weight:50;
   font-size: 2rem;
   font-family: "Russo One", sans-serif;
+  color: var(--mainText);
+}
+p,a{
   color: var(--mainText);
 }
 h5{
   font-family: "Russo One", sans-serif;
   font-size: 1em;
   color: var(--mainText);
+  font-weight:100;
 }
+
 .Intro-wrapper {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas:
     "Nav-wrapper Nav-wrapper"
     "left-column right-column";
+    background-color: var(--secondaryColor);
+    border:1px solid var(--borderColor);
   /* grid-template-rows: 3em 30em; */
   -webkit-box-shadow: -1px 0px 4px 1px rgba(0, 0, 0, 0.62);
   -moz-box-shadow: -1px 0px 4px 1px rgba(0, 0, 0, 0.62);
@@ -116,7 +134,7 @@ h5{
 }
 .left-column {
   grid-area: left-column;
-  background-color: white;
+  /* background-color: white; */
   padding-top: 50px;
   padding-bottom: 50px;
 }
@@ -133,10 +151,12 @@ height:15px;
 width:15px;
 border-radius:50%;
 margin: 5px;
+margin: 5px 5px;
+margin: 5px 10px 2px 0px;
 cursor: pointer;
 /* border: 2px solid var(--themeDotBorder); */
 border:2px solid var(--themeDotBorder);
-border-color:#24292e ;
+/* border-color:#24292e ; */
 }
 .theme-dot:hover{
   border-width: 5px;
@@ -161,10 +181,12 @@ border-color:#24292e ;
   text-align: center;
   font-size: 12px;
   font-style: italic;
+  color: var(--mainText);
+  font-family: "Roboto Mono", monospace;
 }
 .right-column {
   grid-area: right-column;
-  background-color: white;
+  /* background-color: white; */
   display: grid;
   align-content: center;
 
