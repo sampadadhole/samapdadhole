@@ -322,6 +322,7 @@ position: absolute;
 
 #contact-form label{
   line-height: 2.7rem;
+  
 }
 
 #contact-form{
@@ -333,6 +334,7 @@ position: absolute;
   border-radius: 5px;
   background-color: var(--mainColor);
   margin-bottom: 15px;
+  color: var(--mainText);
 }
 
 #contact-form textarea{
