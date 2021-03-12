@@ -271,6 +271,7 @@ position: absolute;
   display:flex;
   justify-content: space-evenly;
   background-color: var(--previewShadow);
+  color: var(--mainText);
 }
 .social-links{
   display:grid;
@@ -301,6 +302,7 @@ position: absolute;
   -webkit-box-shadow: -1px 0px 4px 1px rgba(0, 0, 0, 0.62);
   -moz-box-shadow: -1px 0px 4px 1px rgba(0, 0, 0, 0.62);
   box-shadow: -1px 0px 4px 1px rgba(0, 0, 0, 0.62);
+  color: var(--mainText);
 }
 
 .post-preview{
@@ -313,7 +315,7 @@ position: absolute;
   margin:0;
 }
 
-.post-into{
+.post-intro{
   color:#4b5156;
   font-size:16px;
 }
